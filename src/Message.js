@@ -3,8 +3,7 @@ import React from "react";
 import "./Message.css";
 
 function Message({ timestamp, user, message }) {
-    console.log(user, ' user')
-    console.log(timestamp, ' timestamp')
+
   return (
     <div className="message">
       <Avatar src={user.photo} />

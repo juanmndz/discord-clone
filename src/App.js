@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     auth.onAuthStateChanged(authUser => {
-      console.log("user is ", authUser)
+      // console.log("user is ", authUser)
       if (authUser) {
         // The user is logged in
         dispatch(login({
