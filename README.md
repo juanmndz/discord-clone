@@ -42,11 +42,9 @@ A discord clone implemented using ReactJS.
 
 - ReactJs
 - Redux
-- MongoDB
-- Express
 - HTML
 - CSS
-- Heroku
+- Firebase
 - Material-UI
 
 ## Getting Started
