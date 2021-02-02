@@ -1,17 +1,33 @@
 <h1 align="center">
   React JS Discord Clone 💻
 </h1>
+
 <p align="center">
 A discord clone implemented using ReactJS.
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/juanmndz/discord-clone/blob/dev/LICENSE)
+</p>
+<p align="center">
 <img src="https://img.shields.io/badge/developed%20by-juanmndz-blue.svg">
 <img src="https://img.shields.io/github/stars/juanmndz/discord-clone.svg?style=flat">
 <img src="https://img.shields.io/github/languages/top/juanmndz/discord-clone.svg"/>
-[![issues](https://img.shields.io/github/issues/StevenPss/discord-clone.svg)](https://github.com/juanmndz/discord-clone/issues)
-[![issues](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/juanmndz/discord-clone/pulls)
+<a href="https://github.com/juanmndz/discord-clone/blob/dev/LICENSE" target="blank">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
+</a>
+<a href="https://github.com/juanmndz/discord-clone/issues" target="blank">
+  <img src="https://img.shields.io/github/issues/StevenPss/discord-clone.svg"/>
+</a>
+<a href="https://github.com/juanmndz/discord-clone/pulls" target="blank">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat"/>
+</a>
 </p>
 
+---
+
+
 <img src="./docs/gitimage.gif" alt="">
+
+## Live Demo
+
+[Live Demo Link](https://discordapp-b6daf.web.app/)
 
 ## Features
 
@@ -21,10 +37,6 @@ A discord clone implemented using ReactJS.
 - Realtime Chat
 - Scroll to bottom
 - Emoji Chat
-
-## Live Demo
-
-[Live Demo Link](https://discordapp-b6daf.web.app/)
 
 ## Built With
 
