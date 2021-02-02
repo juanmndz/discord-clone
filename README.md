@@ -3,15 +3,14 @@
 </h1>
 <p align="center">
 A discord clone implemented using ReactJS.
-</p>
-
-
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/juanmndz/discord-clone/blob/dev/LICENSE)
 <img src="https://img.shields.io/badge/developed%20by-juanmndz-blue.svg">
 <img src="https://img.shields.io/github/stars/juanmndz/discord-clone.svg?style=flat">
 <img src="https://img.shields.io/github/languages/top/juanmndz/discord-clone.svg"/>
 [![issues](https://img.shields.io/github/issues/StevenPss/discord-clone.svg)](https://github.com/juanmndz/discord-clone/issues)
 [![issues](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/juanmndz/discord-clone/pulls)
+</p>
+
 <img src="./docs/gitimage.gif" alt="">
 
 ## Features
