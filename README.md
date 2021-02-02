@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-Clone of Amazon Website (incl. authentication, catalog and shopping cart functionalities). Implemented with React, state management based on React Context API and Firebase integration.</p>
+A discord clone implemented using ReactJS.</p>
 <p align="center">
 <img src="https://img.shields.io/badge/developed%20by-juanmndz-blue.svg">
 <img src="https://img.shields.io/github/stars/juanmndz/discord-clone.svg?style=flat">
