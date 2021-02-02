@@ -5,8 +5,6 @@
 A discord clone implemented using ReactJS.
 </p>
 
-<img src="./docs/gitimage.gif" alt="">
-[![CircleCI](https://circleci.com/gh/juanmndz/discord-clone.svg?style=svg)](https://circleci.com/gh/juanmndz/discord-clone)
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/juanmndz/discord-clone/blob/dev/LICENSE)
 <img src="https://img.shields.io/badge/developed%20by-juanmndz-blue.svg">
@@ -14,6 +12,7 @@ A discord clone implemented using ReactJS.
 <img src="https://img.shields.io/github/languages/top/juanmndz/discord-clone.svg"/>
 [![issues](https://img.shields.io/github/issues/StevenPss/discord-clone.svg)](https://github.com/juanmndz/discord-clone/issues)
 [![issues](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/juanmndz/discord-clone/pulls)
+<img src="./docs/gitimage.gif" alt="">
 
 ## Features
 
