@@ -1,68 +1,79 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+  React JS Discord Clone 💻
+</h1>
+<p align="center">
+A discord clone implemented using ReactJS.
+</p>
 
-## Available Scripts
+<img src="./docs/gitimage.gif" alt="">
+[![CircleCI](https://circleci.com/gh/juanmndz/discord-clone.svg?style=svg)](https://circleci.com/gh/juanmndz/discord-clone)
 
-In the project directory, you can run:
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/juanmndz/discord-clone/blob/dev/LICENSE)
+<img src="https://img.shields.io/badge/developed%20by-juanmndz-blue.svg">
+<img src="https://img.shields.io/github/stars/juanmndz/discord-clone.svg?style=flat">
+<img src="https://img.shields.io/github/languages/top/juanmndz/discord-clone.svg"/>
+[![issues](https://img.shields.io/github/issues/StevenPss/discord-clone.svg)](https://github.com/juanmndz/discord-clone/issues)
+[![issues](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/juanmndz/discord-clone/pulls)
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Login System
+- LogOut System
+- Add channels
+- Realtime Chat
+- Scroll to bottom
+- Emoji Chat
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Live Demo
 
-### `yarn test`
+[Live Demo Link](https://discordapp-b6daf.web.app/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `yarn build`
+- ReactJs
+- Redux
+- MongoDB
+- Express
+- HTML
+- CSS
+- Heroku
+- Material-UI
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+To get local copy up and running in your local machine follow this simple step after cloning this repo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Dependencies
 
-### `yarn eject`
+```
+npm install
+```
+### Create Env Variables And Add For Firebase API Information
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+    REACT_APP_apiKey=""
+    REACT_APP_authDomain= ""
+    REACT_APP_databaseURL= ""
+    REACT_APP_projectId= ""
+    REACT_APP_storageBucket= ""
+    REACT_APP_messagingSenderId= ""
+    REACT_APP_appId= ""
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Run
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm start
+```
+## :handshake: Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Contributions, issues, and feature requests are welcome!
 
-## Learn More
+Feel free to check the [issues page](https://github.com/juanmndz/discord-clone/issues).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Show your support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give a :star: if you like this project
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Acknowledgments
+- [Material-Ui](https://material-ui.com/components/material-icons/) for its Awesome Icons
