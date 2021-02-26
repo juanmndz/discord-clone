@@ -10,6 +10,12 @@ function Login() {
         .catch(error => alert(error.message))
 
     }
+    const signInGuest = () => {
+        // do login 
+        auth.signInAnonymously()
+        .catch(error => alert(error.message))
+
+    }
 
     return (
         <div className="login">
@@ -18,6 +24,7 @@ function Login() {
             </div>
 
             <Button onClick={signIn}>Sign In</Button>
+            <Button onClick={signInGuest}>Sign In as Guest</Button>
         </div>
     )
 }

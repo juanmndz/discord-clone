@@ -4,16 +4,15 @@ import React, { useEffect, useRef, useState } from "react";
 import { selectChannelId, selectChannelName } from "./features/appSlice";
 
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import ChatHeader from "./ChatHeader";
-import EmojiEmotionsIcon from "@material-ui/icons/EmojiEmotions";
-import GifIcon from "@material-ui/icons/Gif";
 import Message from "./Message";
 import db from "./firebase";
 import firebase from "firebase";
 import { selectUser } from "./features/userSlice";
 import { useSelector } from "react-redux";
-
+import GiftPopover from './GiftPopOver'
+import { Box } from "@material-ui/core";
+import EmojiPopOver from './EmojiPopOver'
 function Chat() {
   const user = useSelector(selectUser);
 
@@ -43,12 +42,24 @@ function Chat() {
 
   useEffect(scrollToBottom, [messages]);
 
-  const sendMessage = (e) => {
+  const sendMessage = (e, gifs='false') => {
     e.preventDefault();
 
     db.collection("channels").doc(channelId).collection("messages").add({
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       message: input,
+      user: user,
+    });
+
+    scrollToBottom();
+
+    setInput("");
+  };
+
+  const sendMessageGifs = (gif) => {
+    db.collection("channels").doc(channelId).collection("messages").add({
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      message: gif,
       user: user,
     });
 
@@ -93,9 +104,12 @@ function Chat() {
         </form>
 
         <div className="chat__inputIcons">
-          <CardGiftcardIcon fontSize="large" />
-          <GifIcon fontSize="large" />
-          <EmojiEmotionsIcon fontSize="large" />
+          <Box display="flex">
+
+          {/* <GifIcon fontSize="large" /> */}
+          <GiftPopover sendMessageGifs={sendMessageGifs} />
+          <EmojiPopOver setInput={setInput} input={input} />
+          </Box>
         </div>
       </div>
     </div>

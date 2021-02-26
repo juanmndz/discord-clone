@@ -13,19 +13,28 @@ import SettingsIcon from '@material-ui/icons/Settings'
 import { selectUser } from "./features/userSlice";
 import { useSelector } from "react-redux";
 import db, { auth } from "./firebase";
+import { useDispatch } from 'react-redux'
+import { setChannelInfo } from "./features/appSlice";
+
 
 function Sidebar() {
   const user = useSelector(selectUser)
   const [channels, setChannels] = useState([])
-
+  const dispatch = useDispatch()
+  
   useEffect(() => {
-    db.collection("channels").onSnapshot(snapshot => (
+    db.collection("channels").onSnapshot(snapshot => {
+      if (snapshot.docs) { 
+      const firstItem = snapshot.docs[0]
+      dispatch(setChannelInfo({channelId: firstItem.id, channelName: firstItem.data().channelName}))
+      }
+      return (      
       setChannels(snapshot.docs.map(doc => ({
         id: doc.id,
         channel: doc.data()
       })))
-    ))
-  }, [])
+    )})
+  }, [dispatch])
 
 
 

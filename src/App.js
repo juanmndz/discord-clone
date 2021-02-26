@@ -20,7 +20,7 @@ function App() {
           uid: authUser.uid,
           photo: authUser.photoURL,
           email: authUser.email,
-          displayName: authUser.displayName
+          displayName: authUser.displayName ?  authUser.displayName : `Guest ${authUser.uid.slice(0,4)}`
         }))
       } else {
         // the use is logged out
